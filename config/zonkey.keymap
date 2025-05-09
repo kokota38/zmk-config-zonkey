@@ -40,7 +40,24 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        jpn {
+            bindings = <&kp LANG1>;
+            key-positions = <37 38>;
+        };
+
+        eng {
+            bindings = <&kp LANG2>;
+            key-positions = <38 39>;
+        };
+
+        layer1 {
+            bindings = <&sl 1>;
+            key-positions = <12 13>;
+        };
+    };
 
     macros {
         to_layer_0: to_layer_0 {
