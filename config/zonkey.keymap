@@ -212,13 +212,13 @@
 
         default_layer {
             bindings = <
-&lt 4 Q         &kp W         &kp E         &kp R     &kp T                                    &kp Y               &kp U          &lt 6 I    &lt 5 O  &kp P
-&kp A           &kp S         &kp D         &kp F     &kp G        &kp LS(LG(S))    &kp SLASH  &kp H               &kp J          &kp K      &kp L    &kp ENTER
-&kp LEFT_SHIFT  &kp Z         &kp X         &lt 1 C   &lt 2 V      &lt 3 B          &kp ESC    &kp N               &kp M          &kp COMMA  &kp DOT  &kp MINUS
-&mt LCTRL TAB   &kp LEFT_WIN  &kp LEFT_ALT  &mkp MB1  &lt 5 SPACE  &mkp MB2                    &kp K_CONTEXT_MENU  &kp BACKSPACE                                 &kp DEL
+&lt 4 Q         &kp W         &kp E         &kp R     &kp T                                    &kp Y          &kp U                     &lt 6 I    &lt 5 O  &kp P
+&kp A           &kp S         &kp D         &kp F     &kp G        &kp LS(LG(S))    &kp SLASH  &kp H          &kp J                     &kp K      &kp L    &kp ENTER
+&kp LEFT_SHIFT  &kp Z         &kp X         &lt 1 C   &lt 2 V      &lt 3 B          &kp ESC    &kp N          &kp M                     &kp COMMA  &kp DOT  &kp MINUS
+&mt LCTRL TAB   &kp LEFT_WIN  &kp LEFT_ALT  &mkp MB1  &lt 5 SPACE  &mkp MB2                    &kp BACKSPACE  &mt K_CONTEXT_MENU ENTER                                 &kp DEL
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         layer_1 {
@@ -273,7 +273,7 @@
 &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &trans               &trans            &trans                                  &trans           &trans                                                                   &kp RIGHT_PARENTHESIS
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&inc_dec_kp LC(C_VOLUME_UP) LC(C_VOL_DN)>;
         };
 
         MOUSE {
