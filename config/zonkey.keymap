@@ -42,7 +42,7 @@
 };
 
 / {
-combos {
+    combos {
         compatible = "zmk,combos";
 
         jpn {
@@ -58,6 +58,8 @@ combos {
         layer1 {
             bindings = <&sl 1>;
             key-positions = <12 13>;
+        };
+     };
 
     macros {
         to_layer_0: to_layer_0 {
